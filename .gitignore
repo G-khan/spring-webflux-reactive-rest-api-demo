@@ -1,5 +1,6 @@
 .gradle
 /build/
+*.bat
 
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -58,7 +59,6 @@ hs_err_pid*
 
 ## File-based project format:
 *.iws
-
 ## Plugin-specific files:
 
 # IntelliJ
