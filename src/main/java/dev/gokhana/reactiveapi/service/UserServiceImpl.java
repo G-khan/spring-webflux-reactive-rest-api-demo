@@ -19,8 +19,9 @@ public class UserServiceImpl implements UserService {
     @Override
     public Flux<User> getUsers() {
         return Flux.just(
-                new User(1, "Gokhan", new Random().nextInt(100) + 1),
-                new User(2, "Gokhan", new Random().nextInt(100) + 1)
+                new User(1, "Hello", new Random().nextInt(100) + 1),
+                new User(2, "from", new Random().nextInt(100) + 1),
+                new User(3, "Spring Webflux", new Random().nextInt(100) + 1)
         );
     }
 
