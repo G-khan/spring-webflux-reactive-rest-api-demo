@@ -40,6 +40,13 @@ public class UserController {
                 .defaultIfEmpty(ResponseEntity.notFound().build());
     }
 
+    @GetMapping("/guests/{id}")
+    public Mono<ResponseEntity<User>> getGuestUser(@PathVariable int id) {
+        return userService.getGuestUserById(id)
+                .map(ResponseEntity::ok)
+                .defaultIfEmpty(ResponseEntity.notFound().build());
+    }
+
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Mono<User> createUser(@RequestBody Mono<User> userMono) {

@@ -4,8 +4,6 @@ import dev.gokhana.reactiveapi.model.User;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-import java.util.Optional;
-
 public interface UserService {
     Mono<User> getUserById(int id);
 
@@ -16,4 +14,6 @@ public interface UserService {
     Mono<User> updateUser(int id, Mono<User> userMono);
 
     Mono<Void> deleteUser(int id);
+
+    Mono<User>  getGuestUserById(int id);
 }

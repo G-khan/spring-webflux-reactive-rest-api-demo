@@ -1,0 +1,46 @@
+GET http://localhost:8080/api/v1/users/-123
+
+<> 2022-01-15T145252.200.json
+
+###
+
+GET http://localhost:8080/api/v1/users/-123
+
+<> 2022-01-15T145246.200.json
+
+###
+
+GET http://localhost:8080/api/v1/users
+
+<> 2022-01-15T125205.200.json
+
+###
+
+GET http://localhost:8080/api/v1/users/guests/1
+
+<> 2022-01-15T125159.200.json
+
+###
+
+GET http://localhost:8080/api/v1/users/guests/1
+
+<> 2022-01-15T125157.200.json
+
+###
+
+GET http://localhost:8080/api/v1/users/guests/1
+
+<> 2022-01-15T125154.200.json
+
+###
+
+GET http://localhost:8080/api/v1/users/guests/1
+
+<> 2022-01-15T122906.200.json
+
+###
+
+GET http://localhost:8080/api/v1/users/guests/{{id}}
+
+###
+
