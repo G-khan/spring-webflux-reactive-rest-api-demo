@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Hello",
+    "score": 20
+  },
+  {
+    "id": 2,
+    "name": "Hello",
+    "score": 13
+  },
+  {
+    "id": 3,
+    "name": "from",
+    "score": 42
+  },
+  {
+    "id": 4,
+    "name": "Spring Webflux",
+    "score": 92
+  }
+]

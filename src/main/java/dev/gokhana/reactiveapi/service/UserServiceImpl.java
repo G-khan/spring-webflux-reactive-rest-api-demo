@@ -2,20 +2,22 @@ package dev.gokhana.reactiveapi.service;
 
 import dev.gokhana.reactiveapi.client.UserWebClient;
 import dev.gokhana.reactiveapi.model.User;
+import dev.gokhana.reactiveapi.repository.UserRepository;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-// Dummy Service for reactive api
 @Service
 public class UserServiceImpl implements UserService {
 
     final UserWebClient userWebClient;
+    private final UserRepository userRepository;
 
-    public UserServiceImpl(UserWebClient userWebClient) {
+    public UserServiceImpl(UserWebClient userWebClient, UserRepository userRepository) {
         this.userWebClient = userWebClient;
+        this.userRepository = userRepository;
     }
 
     @Override
@@ -26,11 +28,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Flux<User> getUsers() {
-        return Flux.just(
-                new User(1, "Hello", ThreadLocalRandom.current().nextInt(1, 100)),
-                new User(2, "from", ThreadLocalRandom.current().nextInt(1, 100)),
-                new User(3, "Spring Webflux", ThreadLocalRandom.current().nextInt(1, 100))
-        );
+        return userRepository.findAll();
     }
 
     @Override

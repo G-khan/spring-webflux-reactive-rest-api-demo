@@ -1,3 +1,29 @@
+GET http://localhost:8099/api/v1/users
+
+<> 2022-01-18T000406.200.json
+
+###
+
+POST http://localhost:8099/users
+Content-Type: application/json
+
+{
+  "name": "Gökhan",
+  "username": "G-khan"
+}
+
+###
+
+POST http://localhost:8099/users
+Content-Type: application/json
+
+{
+  "name": "Gökhan",
+  "username": "G-khan"
+}
+
+###
+
 GET http://localhost:8080/api/v1/users/-123
 
 <> 2022-01-15T145252.200.json

@@ -1,6 +1,11 @@
 package dev.gokhana.reactiveapi.model;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
+
+@Table("reactive_user")
 public class User {
+    @Id
     private Integer id;
     private String name;
     private Integer score;
@@ -10,6 +15,11 @@ public class User {
 
     public User(Integer id, String name, Integer score) {
         this.id = id;
+        this.name = name;
+        this.score = score;
+    }
+
+    public User(String name, int score) {
         this.name = name;
         this.score = score;
     }
