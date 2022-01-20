@@ -7,8 +7,6 @@ import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-import java.util.concurrent.ThreadLocalRandom;
-
 @Service
 public class UserServiceImpl implements UserService {
 
@@ -22,8 +20,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Mono<User> getUserById(int id) {
-        int random = ThreadLocalRandom.current().nextInt(1, 100);
-        return Mono.just(new User(id, "Gokhan", random));
+        return userRepository.findById(id);
     }
 
     @Override
@@ -32,24 +29,21 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Mono<User> saveUser(Mono<User> userMono) {
-        return userMono.map(user -> {
-            user.setId(ThreadLocalRandom.current().nextInt(1, 100));
-            return user;
-        });
+    public Mono<User> saveUser(User userDTO) {
+        return userRepository.save(userDTO);
     }
 
     @Override
-    public Mono<User> updateUser(int id, Mono<User> userMono) {
-        return userMono.map(user -> {
+    public Mono<User> updateUser(int id, User userDTO) {
+        return userRepository.findById(id).flatMap(user -> {
             user.setId(id);
-            return user;
+            return userRepository.save(user);
         });
     }
 
     @Override
     public Mono<Void> deleteUser(int id) {
-        return Mono.empty();
+        return userRepository.deleteById(id);
     }
 
 

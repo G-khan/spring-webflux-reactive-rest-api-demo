@@ -49,13 +49,13 @@ public class UserController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Mono<User> createUser(@RequestBody Mono<User> userMono) {
+    public Mono<User> createUser(@RequestBody User userMono) {
         return userService.saveUser(userMono);
     }
 
     @PutMapping("/{id}")
-    public Mono<ResponseEntity<User>> updateUser(@PathVariable int id, @RequestBody Mono<User> userMono) {
-        return userService.updateUser(id, userMono)
+    public Mono<ResponseEntity<User>> updateUser(@PathVariable int id, @RequestBody User user) {
+        return userService.updateUser(id, user)
                 .map(ResponseEntity::ok)
                 .defaultIfEmpty(ResponseEntity.notFound().build());
     }
