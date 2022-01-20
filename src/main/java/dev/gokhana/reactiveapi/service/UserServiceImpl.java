@@ -36,8 +36,8 @@ public class UserServiceImpl implements UserService {
     @Override
     public Mono<User> updateUser(int id, User userDTO) {
         return userRepository.findById(id).flatMap(user -> {
-            user.setId(id);
-            return userRepository.save(user);
+            userDTO.setId(user.getId()); // if there is something else to update do it here.
+            return userRepository.save(userDTO);
         });
     }
 

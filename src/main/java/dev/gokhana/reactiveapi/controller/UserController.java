@@ -27,7 +27,7 @@ public class UserController {
         return userService.getUsers();
     }
 
-    @GetMapping(path = "/flux", produces = MediaType.APPLICATION_STREAM_JSON_VALUE)
+    @GetMapping(path = "/flux", produces = MediaType.APPLICATION_NDJSON_VALUE)
     public Flux<User> getFlux(){
         return userService.getUsers()
                 .delayElements(Duration.ofSeconds(1)).log();
@@ -49,20 +49,20 @@ public class UserController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Mono<User> createUser(@RequestBody User userMono) {
-        return userService.saveUser(userMono);
+    public Mono<User> createUser(@RequestBody Mono<User> userMono) {
+        return userMono.flatMap(userService::saveUser);
     }
 
     @PutMapping("/{id}")
-    public Mono<ResponseEntity<User>> updateUser(@PathVariable int id, @RequestBody User user) {
-        return userService.updateUser(id, user)
+    public Mono<ResponseEntity<User>> updateUser(@PathVariable int id, @RequestBody Mono<User> userMono) {
+        return userMono.flatMap(user -> userService.updateUser(id, user))
                 .map(ResponseEntity::ok)
                 .defaultIfEmpty(ResponseEntity.notFound().build());
     }
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    private Mono<Void> deleteUser(@PathVariable int id) {
+    public Mono<Void> deleteUser(@PathVariable int id) {
         return userService.deleteUser(id);
     }
 

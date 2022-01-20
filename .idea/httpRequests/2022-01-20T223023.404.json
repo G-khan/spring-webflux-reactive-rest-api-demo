@@ -1,0 +1,8 @@
+{
+  "timestamp": "2022-01-20T19:30:23.561+00:00",
+  "path": "/api/v1/users/guests/1",
+  "status": 404,
+  "error": "Not Found",
+  "message": null,
+  "requestId": "38943305-7"
+}

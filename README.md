@@ -10,3 +10,22 @@ Examples
 * Mono, Flux structures
 * Functional Reactive Endpoints
 * WebClient & WebTestClient
+
+
+
+http://localhost:8099/api/v1/users
+
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 36
+
+{
+"id": 14,
+"name": "Gokhan",
+"score": 52
+}
+Response file saved.
+> 2022-01-20T215736.201.json
+
+Response code: 201 (Created); Time: 324ms; Content length: 36 bytes
+

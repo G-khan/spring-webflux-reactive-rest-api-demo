@@ -11,4 +11,5 @@ public interface UserRepository extends ReactiveCrudRepository<User, Long> {
     Flux<User> findByName(String name);
     Mono<User> findById(int id);
     Mono<Void> deleteById(int id);
+
 }

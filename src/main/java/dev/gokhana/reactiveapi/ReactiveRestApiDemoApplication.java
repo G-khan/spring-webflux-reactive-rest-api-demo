@@ -8,7 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.r2dbc.repository.config.EnableR2dbcRepositories;
 import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
 
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -30,7 +29,7 @@ public class ReactiveRestApiDemoApplication {
                     new User("from", ThreadLocalRandom.current().nextInt(1, 100)),
                     new User("Spring Webflux", ThreadLocalRandom.current().nextInt(1, 100))
             );
-            repository.saveAll(users).subscribe(System.out::println);
+            repository.saveAll(users);
         };
     }
 }
