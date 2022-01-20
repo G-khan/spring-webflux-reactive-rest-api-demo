@@ -1,3 +1,9 @@
+GET http://localhost:8099/api/v1/users
+
+<> 2022-01-20T224539.200.json
+
+###
+
 DELETE http://localhost:8099/api/v1/users/24
 
 ###

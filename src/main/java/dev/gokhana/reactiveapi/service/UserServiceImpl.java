@@ -10,7 +10,7 @@ import reactor.core.publisher.Mono;
 @Service
 public class UserServiceImpl implements UserService {
 
-    final UserWebClient userWebClient;
+    private final UserWebClient userWebClient;
     private final UserRepository userRepository;
 
     public UserServiceImpl(UserWebClient userWebClient, UserRepository userRepository) {

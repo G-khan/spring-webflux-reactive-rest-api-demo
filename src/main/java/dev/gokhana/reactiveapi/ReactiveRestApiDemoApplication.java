@@ -12,7 +12,6 @@ import reactor.core.publisher.Flux;
 import java.util.concurrent.ThreadLocalRandom;
 
 @SpringBootApplication
-@EnableR2dbcRepositories
 public class ReactiveRestApiDemoApplication {
 
     public static void main(String[] args) {
@@ -22,8 +21,7 @@ public class ReactiveRestApiDemoApplication {
     @Bean
     public CommandLineRunner loadData(UserRepository repository) {
         return (args) -> {
-            // save a couple of customers
-
+            // save a couple of users
             var users = Flux.just(
                     new User("Hello", ThreadLocalRandom.current().nextInt(1, 100)),
                     new User("from", ThreadLocalRandom.current().nextInt(1, 100)),
