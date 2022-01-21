@@ -10,6 +10,7 @@ Examples
 * Mono, Flux structures
 * Functional Reactive Endpoints
 * WebClient & WebTestClient
+* R2DBC with PostgreSQL
 
     ## Requests
 
