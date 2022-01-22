@@ -6,7 +6,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.data.r2dbc.repository.config.EnableR2dbcRepositories;
 import reactor.core.publisher.Flux;
 
 import java.util.concurrent.ThreadLocalRandom;
@@ -23,11 +22,11 @@ public class ReactiveRestApiDemoApplication {
         return (args) -> {
             // save a couple of users
             var users = Flux.just(
-                    new User("Hello", ThreadLocalRandom.current().nextInt(1, 100)),
-                    new User("from", ThreadLocalRandom.current().nextInt(1, 100)),
-                    new User("Spring Webflux", ThreadLocalRandom.current().nextInt(1, 100))
+                    new User("Gökhan", ThreadLocalRandom.current().nextInt(1, 100)),
+                    new User("Betül", ThreadLocalRandom.current().nextInt(1, 100)),
+                    new User("Zühtü",  ThreadLocalRandom.current().nextInt(1, 100))
             );
-            repository.saveAll(users);
+            repository.saveAll(users).subscribe();
         };
     }
 }

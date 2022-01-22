@@ -9,9 +9,9 @@ public interface UserService {
 
     Flux<User> getUsers();
 
-    Mono<User> saveUser(User userDtoMono);
+    Mono<User> saveUser(User user);
 
-    Mono<User> updateUser(int id, User userMono);
+    Mono<User> updateUser(int id, User user);
 
     Mono<Void> deleteUser(int id);
 

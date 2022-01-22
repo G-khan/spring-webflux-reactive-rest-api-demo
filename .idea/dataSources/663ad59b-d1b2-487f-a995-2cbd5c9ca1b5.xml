@@ -1429,47 +1429,26 @@ false posixrules
 </Relations>
       <OwnerName>postgres</OwnerName>
     </database>
-    <database id="3" parent="1" name="polly_db">
-      <ObjectId>16384</ObjectId>
-      <OwnerName>postgres</OwnerName>
-    </database>
-    <database id="4" parent="1" name="postgres">
+    <database id="3" parent="1" name="postgres">
       <Comment>default administrative connection database</Comment>
       <ObjectId>13395</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="4" parent="1" name="polly_db">
+      <ObjectId>16384</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
     <database id="5" parent="1" name="reactive_examples_db">
       <ObjectId>57431</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
-    <role id="6" parent="1" name="pg_execute_server_program">
-      <ObjectId>4571</ObjectId>
-    </role>
-    <role id="7" parent="1" name="pg_monitor">
-      <ObjectId>3373</ObjectId>
-      <RoleGrants>3374
-3375
-3377</RoleGrants>
-    </role>
-    <role id="8" parent="1" name="pg_read_all_settings">
-      <ObjectId>3374</ObjectId>
-    </role>
-    <role id="9" parent="1" name="pg_read_all_stats">
-      <ObjectId>3375</ObjectId>
-    </role>
-    <role id="10" parent="1" name="pg_read_server_files">
-      <ObjectId>4569</ObjectId>
-    </role>
-    <role id="11" parent="1" name="pg_signal_backend">
+    <role id="6" parent="1" name="pg_signal_backend">
       <ObjectId>4200</ObjectId>
     </role>
-    <role id="12" parent="1" name="pg_stat_scan_tables">
-      <ObjectId>3377</ObjectId>
+    <role id="7" parent="1" name="pg_read_server_files">
+      <ObjectId>4569</ObjectId>
     </role>
-    <role id="13" parent="1" name="pg_write_server_files">
-      <ObjectId>4570</ObjectId>
-    </role>
-    <role id="14" parent="1" name="postgres">
+    <role id="8" parent="1" name="postgres">
       <BypassRls>1</BypassRls>
       <CanLogin>1</CanLogin>
       <CreateDb>1</CreateDb>
@@ -1477,6 +1456,27 @@ false posixrules
       <ObjectId>10</ObjectId>
       <Replication>1</Replication>
       <SuperRole>1</SuperRole>
+    </role>
+    <role id="9" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
+    </role>
+    <role id="10" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+    </role>
+    <role id="11" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+    </role>
+    <role id="12" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <RoleGrants>3374
+3375
+3377</RoleGrants>
+    </role>
+    <role id="13" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+    </role>
+    <role id="14" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
     </role>
     <tablespace id="15" parent="1" name="pg_default">
       <ObjectId>1663</ObjectId>
