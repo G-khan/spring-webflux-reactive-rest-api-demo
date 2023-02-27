@@ -1,6 +1,7 @@
 package dev.gokhana.reactiveapi.service;
 
 import dev.gokhana.reactiveapi.client.UserWebClient;
+import dev.gokhana.reactiveapi.exception.NotFoundException;
 import dev.gokhana.reactiveapi.model.Address;
 import dev.gokhana.reactiveapi.model.User;
 import dev.gokhana.reactiveapi.repository.AddressRepository;
@@ -24,14 +25,17 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Mono<User> getUserById(int id) {
-        return userRepository.findById(id).flatMap(user -> {
-            if (user.getAddressId() == null) return Mono.just(user);
-            Mono<Address> addressMono = addressRepository.findById(user.getAddressId());
-            return addressMono.map(address -> {
-                user.setAddress(address);
-                return user;
-            });
-        });
+        return userRepository.findById(id)
+                .switchIfEmpty(Mono.error(new NotFoundException("User not found")))
+                .flatMap(user -> {
+                    if (user.getAddressId() == null) {
+                        return Mono.just(user);
+                    }
+                    return addressRepository.findById(user.getAddressId()).map(address -> {
+                        user.setAddress(address);
+                        return user;
+                    });
+                });
     }
 
     @Override
@@ -54,15 +58,35 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Mono<User> updateUser(int id, User userDTO) {
-        return userRepository.findById(id).flatMap(user -> {
-            userDTO.setId(user.getId()); // if there is something else to update do it here.
-            return userRepository.save(userDTO);
+        return userRepository.findById(id)
+                .switchIfEmpty(Mono.error(new NotFoundException("User not found")))
+                .flatMap(user -> {
+                    userDTO.setId(user.getId()); // if there is something else to update do it here.
+                    if (userDTO.getAddress() == null) return userRepository.save(userDTO);
+                    return updateUserWithAddress(userDTO);
+                });
+    }
+
+    private Mono<? extends User> updateUserWithAddress(User userDTO) {
+        return addressRepository.findById(userDTO.getAddressId()).flatMap(address -> {
+            address.setId(userDTO.getAddressId());
+            address.setCity(userDTO.getAddress().getCity());
+            address.setStreet(userDTO.getAddress().getStreet());
+            address.setState(userDTO.getAddress().getState());
+            return addressRepository.save(address).flatMap(address1 -> {
+                userDTO.setAddressId(address1.getId());
+                return userRepository.save(userDTO);
+            });
         });
     }
 
     @Override
     public Mono<Void> deleteUser(int id) {
-        return userRepository.deleteById(id);
+        // delete user with address
+        return userRepository.findById(id).flatMap(user -> {
+            if (user.getAddressId() == null) return userRepository.deleteById(id);
+            return addressRepository.deleteById(user.getAddressId()).then(userRepository.deleteById(id));
+        });
     }
 
 
