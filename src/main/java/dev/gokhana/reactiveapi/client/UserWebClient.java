@@ -19,7 +19,6 @@ public class UserWebClient {
 
     Logger logger = LoggerFactory.getLogger(UserWebClient.class);
 
-
     private final WebClient webClient;
 
     public UserWebClient(WebClient webClient) {

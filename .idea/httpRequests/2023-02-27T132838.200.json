@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "gokhanadev",
+    "score": 37,
+    "addressId": null,
+    "address": null
+  },
+  {
+    "id": 3,
+    "name": "Zühtü",
+    "score": 20,
+    "addressId": null,
+    "address": null
+  },
+  {
+    "id": 5,
+    "name": "Gökhan",
+    "score": 68,
+    "addressId": 6,
+    "address": null
+  },
+  {
+    "id": 4,
+    "name": "Betül",
+    "score": 84,
+    "addressId": 6,
+    "address": null
+  },
+  {
+    "id": 6,
+    "name": "Zühtü",
+    "score": 83,
+    "addressId": 6,
+    "address": null
+  },
+  {
+    "id": 7,
+    "name": "Zühtü",
+    "score": 22,
+    "addressId": 9,
+    "address": null
+  },
+  {
+    "id": 8,
+    "name": "Gökhan",
+    "score": 82,
+    "addressId": 7,
+    "address": null
+  },
+  {
+    "id": 9,
+    "name": "Betül",
+    "score": 99,
+    "addressId": 8,
+    "address": null
+  },
+  {
+    "id": 10,
+    "name": "Betül",
+    "score": 47,
+    "addressId": 11,
+    "address": null
+  },
+  {
+    "id": 11,
+    "name": "Zühtü",
+    "score": 50,
+    "addressId": 12,
+    "address": null
+  },
+  {
+    "id": 12,
+    "name": "Gökhan",
+    "score": 2,
+    "addressId": 10,
+    "address": null
+  },
+  {
+    "id": 14,
+    "name": "Betül",
+    "score": 61,
+    "addressId": 15,
+    "address": null
+  },
+  {
+    "id": 13,
+    "name": "Gökhan",
+    "score": 12,
+    "addressId": 14,
+    "address": null
+  },
+  {
+    "id": 15,
+    "name": "Zühtü",
+    "score": 4,
+    "addressId": 13,
+    "address": null
+  },
+  {
+    "id": 2,
+    "name": "Betül",
+    "score": 72,
+    "addressId": null,
+    "address": null
+  }
+]

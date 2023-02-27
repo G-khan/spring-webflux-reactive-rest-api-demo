@@ -1,8 +1,0 @@
-{
-  "timestamp": "2022-01-20T18:58:22.978+00:00",
-  "path": "/api/v1/users/1",
-  "status": 404,
-  "error": "Not Found",
-  "message": null,
-  "requestId": "1400adb2-4"
-}

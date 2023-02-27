@@ -1,0 +1,12 @@
+{
+  "id": 19,
+  "name": "Betül",
+  "score": 52,
+  "addressId": 19,
+  "address": {
+    "id": 19,
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA"
+  }
+}

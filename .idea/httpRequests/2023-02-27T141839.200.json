@@ -1,0 +1,51 @@
+[
+  {
+    "id": 13,
+    "name": "Zühtü",
+    "score": 65,
+    "addressId": 13,
+    "address": null
+  },
+  {
+    "id": 14,
+    "name": "Betül",
+    "score": 32,
+    "addressId": 14,
+    "address": null
+  },
+  {
+    "id": 15,
+    "name": "Gökhan",
+    "score": 60,
+    "addressId": 15,
+    "address": null
+  },
+  {
+    "id": 16,
+    "name": "Zühtü",
+    "score": 20,
+    "addressId": 18,
+    "address": null
+  },
+  {
+    "id": 17,
+    "name": "Betül",
+    "score": 33,
+    "addressId": 17,
+    "address": null
+  },
+  {
+    "id": 18,
+    "name": "Gökhan",
+    "score": 52,
+    "addressId": 16,
+    "address": null
+  },
+  {
+    "id": 19,
+    "name": "Betül",
+    "score": 52,
+    "addressId": 19,
+    "address": null
+  }
+]

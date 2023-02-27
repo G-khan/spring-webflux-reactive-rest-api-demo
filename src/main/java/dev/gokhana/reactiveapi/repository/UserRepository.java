@@ -12,4 +12,6 @@ public interface UserRepository extends ReactiveCrudRepository<User, Long> {
     Flux<User> findByName(String name);
     Mono<User> findById(int id);
     Mono<Void> deleteById(int id);
+    @Query("SELECT * FROM reactive_user u JOIN address a ON u.address_id = a.id WHERE u.id = $1")
+    Mono<User> findByIdWithAddress(int id);
 }

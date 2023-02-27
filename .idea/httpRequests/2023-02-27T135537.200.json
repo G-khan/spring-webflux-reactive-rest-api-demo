@@ -1,0 +1,13 @@
+{
+  "id": 15,
+  "name": "Zühtü",
+  "score": 4,
+  "addressId": 13,
+  "address": {
+    "id": 13,
+    "street": null,
+    "city": "istanbul",
+    "state": null,
+    "zip": null
+  }
+}

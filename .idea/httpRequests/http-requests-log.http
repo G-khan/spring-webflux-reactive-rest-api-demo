@@ -1,3 +1,418 @@
+DELETE http://localhost:8099/api/v1/users/13
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:8099/api/v1/users
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-27T141839.200.json
+
+###
+
+POST http://localhost:8099/api/v1/users
+Content-Type: application/json
+Content-Length: 169
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Betül",
+  "score": 52,
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "zip": "12345",
+    "country": "USA"
+  }
+}
+
+<> 2023-02-27T141740.201.json
+
+###
+
+POST http://localhost:8099/api/v1/users
+Content-Type: application/json
+Content-Length: 169
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Betül",
+  "score": 52,
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "zip": "12345",
+    "country": "USA"
+  }
+}
+
+<> 2023-02-27T141516.500.json
+
+###
+
+POST http://localhost:8099/api/v1/users
+Content-Type: application/json
+Content-Length: 169
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Betül",
+  "score": 52,
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "zip": "12345",
+    "country": "USA"
+  }
+}
+
+<> 2023-02-27T141514.500.json
+
+###
+
+POST http://localhost:8099/api/v1/users
+Content-Type: application/json
+Content-Length: 169
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Betül",
+  "score": 52,
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "zip": "12345",
+    "country": "USA"
+  }
+}
+
+<> 2023-02-27T141507.500.json
+
+###
+
+POST http://localhost:8099/api/v1/users
+Content-Type: application/json
+Content-Length: 169
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Betül",
+  "score": 52,
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "zip": "12345",
+    "country": "USA"
+  }
+}
+
+<> 2023-02-27T141403.400.json
+
+###
+
+POST http://localhost:8099/api/v1/users
+Content-Type: application/json
+Content-Length: 169
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Betül",
+  "score": 52,
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "zip": "12345",
+    "country": "USA"
+  }
+}
+
+<> 2023-02-27T141312.400.json
+
+###
+
+POST http://localhost:8099/api/v1/users
+Content-Type: application/json
+Content-Length: 169
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Betül",
+  "score": 52,
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "zip": "12345",
+    "country": "USA"
+  }
+}
+
+<> 2023-02-27T141306.400.json
+
+###
+
+POST http://localhost:8099/api/v1/users
+Content-Type: application/json
+Content-Length: 169
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Betül",
+  "score": 52,
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "zip": "12345",
+    "country": "USA"
+  }
+}
+
+<> 2023-02-27T141237.400.json
+
+###
+
+POST http://localhost:8099/api/v1/users
+Content-Type: application/json
+Content-Length: 169
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Betül",
+  "score": 52,
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "zip": "12345",
+    "country": "USA"
+  }
+}
+
+<> 2023-02-27T141145.400.json
+
+###
+
+POST http://localhost:8099/api/v1/users
+Content-Type: application/json
+Content-Length: 169
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Betül",
+  "score": 52,
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "zip": "12345",
+    "country": "USA"
+  }
+}
+
+<> 2023-02-27T141111.400.json
+
+###
+
+POST http://localhost:8099/api/v1/users
+Content-Type: application/json
+Content-Length: 169
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Betül",
+  "score": 52,
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "zip": "12345",
+    "country": "USA"
+  }
+}
+
+<> 2023-02-27T141046.400.json
+
+###
+
+POST http://localhost:8099/api/v1/users
+Content-Type: application/json
+Content-Length: 169
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Betül",
+  "score": 52,
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "zip": "12345",
+    "country": "USA"
+  }
+}
+
+<> 2023-02-27T140836.500.json
+
+###
+
+POST http://localhost:8099/api/v1/users
+Content-Type: application/json
+Content-Length: 169
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Betül",
+  "score": 52,
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "zip": "12345",
+    "country": "USA"
+  }
+}
+
+<> 2023-02-27T140827.500.json
+
+###
+
+POST http://localhost:8099/api/v1/users
+Content-Type: application/json
+Content-Length: 169
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Betül",
+  "score": 52,
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "zip": "12345",
+    "country": "USA"
+  }
+}
+
+<> 2023-02-27T140818.500.json
+
+###
+
+POST http://localhost:8099/api/v1/users
+Content-Type: application/json
+Content-Length: 169
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Betül",
+  "score": 52,
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "zip": "12345",
+    "country": "USA"
+  }
+}
+
+<> 2023-02-27T140615.500.json
+
+###
+
+GET http://localhost:8099/api/v1/users/15
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-27T135537.200.json
+
+###
+
+GET http://localhost:8099/api/v1/users/15
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-27T133502.200.json
+
+###
+
+GET http://localhost:8099/api/v1/users/15
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-27T133337.200.json
+
+###
+
+GET http://localhost:8099/api/v1/users/15
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-27T133012.200.json
+
+###
+
+GET http://localhost:8099/api/v1/users/15
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-27T132853.200.json
+
+###
+
+GET http://localhost:8099/api/v1/users/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-27T132838.200.json
+
+###
+
 GET http://localhost:8099/api/v1/users
 
 <> 2022-01-20T224539.200.json
@@ -137,180 +552,6 @@ Content-Type: application/json
 }
 
 <> 2022-01-20T220552.404.json
-
-###
-
-PUT http://localhost:8099/api/v1/users/1
-Content-Type: application/json
-
-{
-  "name": "Gokhanadev",
-  "score": 52
-}
-
-<> 2022-01-20T220527.200.json
-
-###
-
-PUT http://localhost:8099/api/v1/users/1
-Content-Type: application/json
-
-{
-  "name": "Gokhanadev",
-  "score": 52
-}
-
-<> 2022-01-20T215832.200.json
-
-###
-
-PUT http://localhost:8080/api/v1/users/1
-Content-Type: application/json
-
-{
-  "name": "Gokhanadev",
-  "score": 52
-}
-
-<> 2022-01-20T215823.404.json
-
-###
-
-POST http://localhost:8099/api/v1/users
-Content-Type: application/json
-
-{
-  "name": "Gokhan",
-  "score": 52
-}
-
-<> 2022-01-20T215736.201.json
-
-###
-
-POST http://localhost:8080/api/v1/users
-Content-Type: application/json
-
-{
-  "name": "Gokhan",
-  "score": 52
-}
-
-<> 2022-01-20T215725.404.json
-
-###
-
-POST http://localhost:8099/users
-Content-Type: application/json
-
-{
-  "name": "Gökhan",
-  "username": "G-khan"
-}
-
-<> 2022-01-20T215653.404.json
-
-###
-
-GET http://localhost:8099/api/v1/users
-
-<> 2022-01-20T215640.200.json
-
-###
-
-GET http://localhost:8099/api/v1/users
-
-<> 2022-01-20T215603.200.json
-
-###
-
-GET http://localhost:8099/v1/api/users
-
-<> 2022-01-20T215528.404.json
-
-###
-
-GET http://localhost:8099/v1/api/users
-
-<> 2022-01-20T215400.404.json
-
-###
-
-GET http://localhost:8080/v1/api/users
-
-<> 2022-01-20T215300.404.json
-
-###
-
-GET http://localhost:8099/api/v1/users
-
-<> 2022-01-18T000406.200.json
-
-###
-
-POST http://localhost:8099/users
-Content-Type: application/json
-
-{
-  "name": "Gökhan",
-  "username": "G-khan"
-}
-
-###
-
-POST http://localhost:8099/users
-Content-Type: application/json
-
-{
-  "name": "Gökhan",
-  "username": "G-khan"
-}
-
-###
-
-GET http://localhost:8080/api/v1/users/-123
-
-<> 2022-01-15T145252.200.json
-
-###
-
-GET http://localhost:8080/api/v1/users/-123
-
-<> 2022-01-15T145246.200.json
-
-###
-
-GET http://localhost:8080/api/v1/users
-
-<> 2022-01-15T125205.200.json
-
-###
-
-GET http://localhost:8080/api/v1/users/guests/1
-
-<> 2022-01-15T125159.200.json
-
-###
-
-GET http://localhost:8080/api/v1/users/guests/1
-
-<> 2022-01-15T125157.200.json
-
-###
-
-GET http://localhost:8080/api/v1/users/guests/1
-
-<> 2022-01-15T125154.200.json
-
-###
-
-GET http://localhost:8080/api/v1/users/guests/1
-
-<> 2022-01-15T122906.200.json
-
-###
-
-GET http://localhost:8080/api/v1/users/guests/{{id}}
 
 ###
 
